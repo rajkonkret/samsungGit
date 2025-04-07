@@ -3,3 +3,4 @@ b
 c
 dureń
 eg
+tak
