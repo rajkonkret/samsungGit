@@ -1,3 +1,3 @@
-a
-b
-c
+anemia
+bulimia
+celiakia
