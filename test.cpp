@@ -6,3 +6,4 @@ int main(){
     std::throw "psuje";
     return -1;
 }
+BOO 👺👺👺👺👺👺👺👺
