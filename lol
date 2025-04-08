@@ -1,0 +1,4 @@
+anemia
+bulimia
+celiakia
+daktyl
