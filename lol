@@ -1,3 +1,4 @@
 anemia
 bulimia
 celiakia
+daktyl
