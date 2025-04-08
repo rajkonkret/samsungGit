@@ -1,4 +1,4 @@
 anemia
 bulimia
 celiakia
-daktyl
+daktylBOO 👺👺👺👺👺👺👺👺
