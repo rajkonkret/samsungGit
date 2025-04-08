@@ -1,0 +1,419 @@
+    1  ls
+    2  mkdir hello-git
+    3  ls
+    4  cd hello-git/
+    5  git init
+    6  git status
+    7  git status
+    8  git add tekst1
+    9  git status
+   10  git status
+   11  git add tekst1
+   12  git status
+   13  git commit -m "dodano tekst"
+   14  git config --global user.email "rajkonkret660@gmail.com"
+   15  git config --global user.name "Radek J"
+   16  git status
+   17  git config -l
+   18  git status
+   19  git commit -m "dodano tekst"
+   20  git --logs
+   21  git --log
+   22  git log
+   23  git log --oneline
+   24  git status
+   25  git add .
+   26  git status
+   27  git commit -m"nowa linia"
+   28  git status
+   29  git log
+   30  git log --oneline
+   31  git help log
+   32  man git-commit
+   33  git diff
+   34  git log --oneline
+   35  git diff 0fc65a0
+   36  git diff
+   37  git restore tekst1 
+   38  rm tekst1 
+   39  git status
+   40  git add -u
+   41  git status
+   42  git commit -m"Usuniecie pliku"
+   43  git log --oneline
+   44  git log
+   45  git log --onefile
+   46  git status
+   47  git status
+   48  git status
+   49  git commit -m"dodano pierwsza linia"
+   50  git status
+   51  git add tekst2 
+   52  git commit -m"dodano pierwsza linia"
+   53  git status
+   54  git add tekst2
+   55  git commit -m"dodaj druga linia"
+   56  git status
+   57  git status
+   58  git add tekst2
+   59  git commit -m"dodaj trzecia linia"
+   60  git commit -a -m"dodano czwarta linia"
+   61  git status
+   62  git status
+   63  git log --onefile
+   64  git log --oneline
+   65  git rebase -i HEAD~2
+   66  git log --oneline
+   67  git rebase -i HEAD~2
+   68  git status
+   69  git log --oneline
+   70  git rebase -i HEAD~2
+   71  git log --oneline
+   72  git log --oneline
+   73  git commit --amend
+   74  git commit --amend
+   75  git log --oneline
+   76  git log --oneline --graph -all
+   77  git log --oneline --graph --all
+   78  git reset --soft HEAD~1
+   79  git status
+   80  git commit -m"powrot z soft"
+   81  git stataus
+   82  git status
+   83  git log --oneline --graph --all
+   84  git reset --hard HEAD~1
+   85  git status
+   86  git status
+   87  git status
+   88  git reflog
+   89  git reset --hard HEAD@{1}
+   90  git status
+   91  git reflog
+   92  git branch -l
+   93  git branch funkcja1
+   94  git checkout funkcja1
+   95  git branch -l
+   96  git checkout master
+   97  git statsu
+   98  git status
+   99  git checkout -b funkcja2
+  100  git branch -m funkcja3
+  101  git branch -m funkcja3 funkcja4
+  102  git branch -m funkcja1 funkcja4
+  103  git branch -m funkcja1 funkcja5
+  104  git branch
+  105  git checkout master
+  106  git status
+  107  git merge funkcja5
+  108  git branch -d funkcja5
+  109  git branch
+  110  git branch -d funkcja4
+  111  git branch funkcja1
+  112  git branch -D funkcja1
+  113  git log --oneline --graph --all
+  114  git status
+  115  git branch
+  116  git checkout -b funkcja1
+  117  git status
+  118  git status
+  119  git add tekst2 
+  120  git commit -m"dodano nowy tekst"
+  121  git status
+  122  git log --oneline --graph --all
+  123  git checkout master
+  124  git merge funkcja1
+  125  git log --oneline --graph --all
+  126  git status
+  127  git checkout -b funkcja2
+  128  git status
+  129  git checkout master
+  130  git status
+  131  git commit -a -m"zmiana master"
+  132  git status
+  133  git checkout funkcja2
+  134  git status
+  135  git status
+  136  git commit -a -m "nowy plik"
+  137  git status
+  138  git add tekst3 
+  139  git commit -m"nowy plik"
+  140  git status
+  141  git checkout master
+  142  git status
+  143  git merge funkcja2
+  144  git log --oneline
+  145  git status
+  146  git checkout -b funkcja3
+  147  git add .
+  148  git status
+  149  git commit -m"tekst w tekst3"
+  150  git status
+  151  git checkout master
+  152  git merge -s ours funkcja3
+  153  git status
+  154  git switch funkcja3
+  155  git switch -c funkcja5 
+  156  git branch
+  157  git switch funkcja3
+  158  git switch master
+  159  git log --onefile --graph
+  160  git log --oneline --graph
+  161  git merge funkcja3
+  162  git status
+  163  git switch funkcja3
+  164  git status
+  165  git status
+  166  git add .
+  167  git commit -m"zmiana"
+  168  git switch master
+  169  git merge funkcja3
+  170  git status
+  171  git status
+  172  git add .
+  173  git commit -m"conflict"
+  174  git switch funkcja3
+  175  git status
+  176  git add .
+  177  git status
+  178  git commit -m"add 123"
+  179  git switch master
+  180  git merge funkcja3
+  181  git status
+  182  git add .
+  183  git commit -m"resolve"
+  184  git status
+  185  git status
+  186  git branch -l
+  187  git switch funkcja5
+  188  git status
+  189  git status
+  190  git add tekst2 
+  191  git status
+  192  git commit -m"add konflikty"
+  193  git log --oneline --graph --decorate
+  194  git switch master
+  195  git merge funkcja5
+  196  git status
+  197  git merge --abort
+  198  git status
+  199  git commit -a -m"zmiany"
+  200  git log
+  201  git merge funkcja5
+  202  git status
+  203  git status
+  204  git add tekst2 
+  205  git status
+  206  git commit
+  207  git log --oneline
+  208  git status
+  209  git commit --amend
+  210  git status
+  211  git commit --amend --no-edit
+  212  git commit --amend -m"Nowa tresc"
+  213  git status
+  214  git log --oneline --graph
+  215  git commit -m""
+  216  git commit --alow-empty-message -m""
+  217  git commit --alow-empty-message -m ""
+  218  git commit --allow-empty-message -m ""
+  219  git add .
+  220  git commit --allow-empty-message -m ""
+  221  git ststaus
+  222  git status
+  223  git switch -c feature-rebase
+  224  git status
+  225  git status
+  226  git add tekst2 
+  227  git ststus
+  228  git status
+  229  git commit -m"add rebase"
+  230  git status
+  231  git rebase feature-rebase
+  232  git switch master
+  233  git rebase feature-rebase
+  234  git switch feature-rebase 
+  235  git status
+  236  git status
+  237  git commit -a -m"add zmiana1"
+  238  git commit -a -m"add zmiana2"
+  239  git commit -a -m"add zmiana3"
+  240  git log --oneline
+  241  git rebase -i HEAD~3
+  242  git log --oneline
+  243  git log
+  244  git log --oneline
+  245  git status
+  246  git stash
+  247  git stash list
+  248  git stash pop
+  249  git stash list
+  250  git stash
+  251  git stash apply
+  252  git stash list
+  253  git stash show -p stash@{0} 
+  254  git stash apply stash@{0}
+  255  git stash drop stash@{0} 
+  256  git status
+  257  git stash
+  258  git stash clear
+  259  git status
+  260  git stash push -m"nowe dane logowania"
+  261  git stash show -p stash@{0} 
+  262  git stash list
+  263  git status
+  264  git stash push -m"nowe dane logowania"
+  265  git stash list
+  266  git switch master
+  267  git stash list
+  268  git status
+  269  git switch -c fix
+  270  git status
+  271  git status
+  272  git add .
+  273  git commit -m"fix"
+  274  git status
+  275  git switch mastera
+  276  git log --oneline
+  277  git swich master
+  278  git switch master
+  279  git status
+  280  git log --oneline
+  281  git chery-pick 657c6c7
+  282  git cherry-pick 657c6c7
+  283  git log --oneline
+  284  git config --global --list
+  285  git config --list
+  286  git remote add origin https://github.com/rajkonkret/samsungGit.git
+  287  git push -u origin master
+  288  git status
+  289  git remote -l
+  290  git remote -v
+  291  git fetch
+  292  git staus
+  293  git ststus
+  294  git status
+  295  git pull
+  296  ls
+  297  git pull
+  298  git push -u origin master
+  299  git fetch
+  300  git branch -v
+  301  git branch -r
+  302  git checkout origin/boss
+  303  git checkout origin boss
+  304  git switch origin/boss
+  305  git switch -c boss
+  306  git switch boss
+  307  git pull -u origin boss
+  308  git pull origin boss
+  309  ls
+  310  git push -u origin boss
+  311  git status
+  312  git switch master
+  313  git merge boss
+  314  git rebase master
+  315  git merge boss
+  316  git switch boss
+  317  git rebase boss
+  318  git status
+  319  git switch master
+  320  git pull origin master --allow-unrelated-histories
+  321  git status
+  322  git merge boss --allow-unrelated-histories
+  323  git ststus
+  324  git status
+  325  git push origin master
+  326  git merge boss --allow-unrelated-histories
+  327  git merge boss --allow-unrelated-historiesgit status
+  328  git status
+  329  git switch -c radek
+  330  git status
+  331  git add .
+  332  git status
+  333  git commit -m "add Radek"
+  334  git push -u origin radek
+  335  git switch master
+  336  git pull
+  337  git status
+  338  git status
+  339  ls
+  340  git pull
+  341  ls
+  342  rm virus.bat
+  343  git sttus
+  344  git status
+  345  git add .
+  346  git ststus
+  347  git status
+  348  git commit -m"usuniecie pliku"
+  349  git status
+  350  git push
+  351  git status
+  352  git branch -v
+  353  git branch -r
+  354  git push origin --delete radek
+  355  git pull
+  356  git sttus
+  357  git status
+  358  git pull
+  359  git status
+  360  git add .
+  361  git commi t-m"zmiany"
+  362  git commit -m"zmiany"
+  363  git push origin master
+  364  git pull
+  365  git status
+  366  git fetch
+  367  git branch
+  368  git switch boss
+  369  git pull
+  370  git rebase origin/master
+  371  git rebase --continue
+  372  git status
+  373  git add .
+  374  git rebase --continue
+  375  git sttus
+  376  git status
+  377  git commi t-a
+  378  git commit -a
+  379  git status
+  380  git rebase --continue
+  381  git sttus
+  382  git push 
+  383  git pull
+  384  git push
+  385  git status
+  386  git add .
+  387  git commit -a "aad"
+  388  git commit -a -m "aad"
+  389  git push
+  390  git tag v1.0
+  391  git log
+  392  git log --online
+  393  git log --oneline
+  394  git tag
+  395  git tag 0.6 3f4a59f
+  396  git tag
+  397  git tag -a v0.9 -m "Wersja 0.9"
+  398  git tag
+  399  git show v0.9
+  400  git push origin v1.0
+  401  git push origin --tags
+  402  git log --oneline
+  403  git fetch --tags
+  404  git checkout 0.6
+  405  git switch 0.6
+  406  git status
+  407  git tag -d 0.6
+  408  git sttus
+  409  git status
+  410  git push origin --delete tag v0.9
+  411  git repack -a -d
+  412  git reflog
+  413  git prune
+  414  git reflog
+  415  git prune -n
+  416  git prune -v
+  417  git prune expire=7.days.ago
+  418  git prune --expire=7.days.ago
+  419  history > historia_bash.txt
